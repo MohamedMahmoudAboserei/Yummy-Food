@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar d-flex flex-row min-vh-100 position-fixed top-0">
+        <div class="nav-tab min-vh-100 d-flex flex-column justify-content-between">
+            <div class="tab-links">
+                <ul class="links-tag">
+                    <li class="py-2 position-relative"><a onclick="showSearchInputs(); closeNav()" id="search">Search</a></li>
+                    <li class="py-2 position-relative"><a onclick="getCategories(); closeNav()" id="categories">Categories</a></li>
+                    <li class="py-2 position-relative"><a onclick="getArea(); closeNav()" id="area">Area</a></li>
+                    <li class="py-2 position-relative"><a onclick="getIngredients(); closeNav()" id="ingredients">Ingredients</a></li>
+                    <li class="py-2 position-relative"><a onclick="showContacts(); closeNav()" id="contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons-social-media">
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.google.com/"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <div class="title-footer">
+                    <p>
+                        Copyright M© 2024 All Rights <br> Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header min-vh-100 text-center d-flex flex-column justify-content-between text-black">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <a class="open-nav"><i id="open-icon" class="fa-solid fa-bars"></i></a>
+            <div class="link-share">
+                <a target="_blank" href="https://www.google.com/"><i class="fa-solid fa-globe"></i></a>
+                <a target="_blank" href="https://www.google.com/"><i class="fa-solid fa-share-nodes"></i></a>
+            </div>
+        </div>
+    </nav>
+    <section class="search container w-75" id="searchContainer"></section>
+    <section class="content min-vh-100 position-relative">
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <div class="container">
+            <div id="rowData" class="row py-5 g-4 ">
+            </div>
+        </div>
+    </section>
+    
+    <!--
+    -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
